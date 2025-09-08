@@ -1,42 +1,283 @@
-body{
-   margin: 0px;
-   
-}
-nav{
-        background-color : #0c4ca3 ;
-        padding: 10px;
+body {
+  margin: 0px;
 
 }
-ul{
-    display: flex;
-    list-style: none;
-    justify-content: center;
-}
-li{
-        padding: 15px;
-}
-.border{
-        border-right: 1px solid grey;
-}
-.danhmuc-lienket{
-        color: white;
-        text-decoration: none;
-        font-family: Roboto, Arial, Tahoma;
+
+nav {
+  background-color: #0c4ca3;
+  padding: 10px;
 
 }
-.banner-qc{
-        display: flex;
-        justify-content: center;
-        margin: 20px 0px;
+
+ul {
+  display: flex;
+  list-style: none;
+  justify-content: center;
 }
-.qc{
-        display: flex;
-        justify-content: space-between;
+
+li {
+  padding: 15px;
 }
-header{
-        border-bottom: 10px solid #f1f1f2;
+
+.border {
+  border-right: 1px solid grey;
 }
-h1{
-        color: blue;
-        display: flex;
+
+.danhmuc-lienket {
+  color: white;
+  text-decoration: none;
+  font-family: Roboto, Arial, Tahoma;
+
+}
+
+.banner-qc {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0px;
+}
+
+.qc {
+  display: flex;
+  justify-content: space-between;
+}
+
+header {
+  border-bottom: 10px solid #f1f1f2;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 20px auto;
+}
+
+h2 {
+  color: #0056a6;
+  margin-bottom: 20px;
+  border-bottom: 3px solid #0056a6;
+  display: inline-block;
+}
+
+.more {
+  text-align: right;
+  margin-bottom: 15px;
+}
+
+.more a {
+  text-decoration: none;
+  color: #0056a6;
+  font-size: 14px;
+}
+
+.tintucmoi {
+  display: flex;
+  justify-content: space-between;
+}
+
+.mucmoi {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  overflow: hidden;
+  flex: 0 0 23%;
+  /* 4 cột chia đều */
+  display: flex;
+  flex-direction: column;
+}
+
+.mucmoi img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.noidung {
+  padding: 10px;
+  flex: 1;
+}
+
+.noidung h3 {
+  font-size: 16px;
+  margin: 0 0 10px;
+  color: #222;
+}
+
+.noidung ul {
+  padding-left: 18px;
+  margin: 0;
+}
+
+.noidung ul li {
+  font-size: 13px;
+  margin-bottom: 5px;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  /* căn giữa ngang */
+  align-items: center;
+  /* căn giữa dọc */
+}
+
+.logo img {
+  max-width: 1200px;
+  /* điều chỉnh kích thước ảnh */
+  height: auto;
+}
+
+h3 {
+  color: #0056a6;
+  margin-bottom: 20px;
+  display: inline-block;
+}
+
+.thongbao-container {
+  width: 100%;
+  max-width: auto;
+  margin: 40px auto;
+}
+
+.thongbao {
+  display: flex;
+  flex-direction: row;
+  /* chia ảnh - danh sách nằm ngang */
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
+  background: #f9f9f9;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+
+.thongbao-img {
+  flex: 0 0 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.thongbao-img img {
+  width: 100%;
+  max-width: 250px;
+  height: auto;
+}
+
+.thongbao-img p {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #333;
+  text-align: center;
+}
+
+.thongbao-list {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.thongbao-list ul {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.thongbao-list ul li {
+  font-size: 14px;
+  color: #222;
+  padding-left: 15px;
+  position: relative;
+}
+
+.thongbao-list ul li::before {
+  content: "▪";
+  color: #0056a6;
+  position: absolute;
+  left: 0;
+}
+
+.thongbao-list .them {
+  text-align: right;
+  margin-top: 10px;
+}
+
+.thongbao-list .them a {
+  text-decoration: none;
+  color: #0056a6;
+  font-weight: bold;
+}
+
+.tuyensinh-container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 20px auto;
+}
+
+h4 {
+  color: #0056a6;
+  margin-bottom: 20px;
+  border-bottom: 3px solid #0056a6;
+  display: inline-block;
+}
+
+.more {
+  text-align: right;
+  margin-bottom: 15px;
+}
+
+.more a {
+  text-decoration: none;
+  color: #0056a6;
+  font-size: 14px;
+}
+
+.cacmuc {
+  display: flex;
+  justify-content: space-between;
+}
+
+.muc {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  overflow: hidden;
+  flex: 0 0 23%;
+  /* 4 cột chia đều */
+  display: flex;
+  flex-direction: column;
+
+}
+
+.muc img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.tieude {
+  padding: 10px;
+  flex: 1;
+}
+
+.tieude h3 {
+  font-size: 16px;
+  margin: 0 0 10px;
+  color: #222;
+}
+
+.tieude ul {
+  padding-left: 18px;
+  margin: 0;
+}
+
+.them {
+  width: 80%;
+  margin: 10px auto;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 3px solid #0056a6;
 }
