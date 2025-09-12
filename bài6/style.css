@@ -1,7 +1,7 @@
 body {
     margin: 0;
     padding: 0;
-    background-color: #121212;
+    background-color: rgb(22, 20, 20);
     color: #ffffff;
     display: flex;
     flex-direction: column;
@@ -10,20 +10,16 @@ body {
 
 .container {
     display: flex;
-    flex: 1;
 }
 
 .thanhtrai {
-    width: 250px;
-    background-color: #271616;
+    width: 20%;
+    height: 120%;
+    background-color: #0b0a0a;
     padding: 20px;
+    
 }
 
-.thanhtrai h3 {
-    color: #b3b3b3;
-    font-size: 14px;
-    margin-bottom: 10px;
-}
 
 .thanhtrai ul {
     list-style: none;
@@ -37,3 +33,89 @@ body {
     cursor: pointer;
 }
 
+.Create {
+    
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+button {
+    background-color: #121212;
+    color: white;
+}
+
+.play {
+    display: flex;
+    justify-content: space-between;
+}
+.controls{
+    display: flex;
+    justify-content:flex-start;
+}
+
+.thanhgiua {
+    width: 75%;
+    height: 120%;
+    background-color: rgb(17, 14, 14);
+    border: 1 solid rgb(47, 39, 39);
+}
+
+.playlist-header {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.song-list {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+}
+
+.song-list-header,
+.song-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    align-items: center;
+}
+
+.song-list-header {
+    color: #a0a0a0;
+    font-weight: normal;
+}
+
+
+.song-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    /* cách dòng */
+}
+
+.song-item {
+    align-items: center;
+}
+
+
+.thanhcuoi {
+    width: 25%;
+    height: 120%;
+    display: inline;
+    background-color: #271616;
+
+}
+
+.player {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #282828;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
