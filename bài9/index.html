@@ -1,18 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
     <script src="script.js"></script>
     <script>
         document.writeln("hello world" + "<br>");
         // để viết chú thích js đúng kí tự
-        let hoTen="Bui Duy Tien";
+        let hoTen = "Bui Duy Tien";
         document.writeln(hoTen + "<br>");  //<br> để xuống dòng
-                                          //dấu + để nối chuỗi.
+        //dấu + để nối chuỗi.
         //Hằng
         const pi = 3.14;
 
@@ -48,27 +50,34 @@
 
         // document.writeln(ketQua);
 
-        let thongTinSinhVien={
+        let thongTinSinhVien = {
             hoTen: "Bui Duy Tien",
             tuoi: 20,
             gioitinh: true,
             lop: "công nghệ thông tin địa học"
         }
 
-        document.writeln("xin chào "  + thongTinSinhVien.hoTen +" lớp " + thongTinSinhVien.lop + "<br>")
-        let diaChiTien={
+        document.writeln("xin chào " + thongTinSinhVien.hoTen + " lớp " + thongTinSinhVien.lop + "<br>")
+        let diaChiTien = {
             thanhpho: "Hà Nội",
             huyen: "Thanh Oai",
             so: 28
         }
-        document.writeln("xin chào "  + thongTinSinhVien.hoTen +" lớp " + thongTinSinhVien.lop + " số nhà: " + diaChiTien.so
-            + " huyện " + diaChiTien.huyen + " thành phố " + diaChiTien.thanhpho +"<br>"
+        document.writeln("xin chào " + thongTinSinhVien.hoTen + " lớp " + thongTinSinhVien.lop + " số nhà: " + diaChiTien.so
+            + " huyện " + diaChiTien.huyen + " thành phố " + diaChiTien.thanhpho + "<br>"
         )
-        let soThuHai = "10";
-         soThuHai = parseInt(soThuHai);
+        let soThuHai = "10.5";
         document.writeln(typeof (soThuHai));
 
+        soThuHai = parseInt(soThuHai);
+        document.writeln(typeof (soThuHai));
+        soThuHai = parseFloat(soThuHai);
+
+
+        document.writeln(soThuHai);
+
     </script>
-    
+
 </body>
+
 </html>
