@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <body>
+        <div class="container">
+            <h1>Tính chỉ số BMI</h1>
+
+            <label for="weight">Cân nặng (kg):</label>
+            <input type="number" id="weight" placeholder="Nhập cân nặng">
+
+            <label for="height">Chiều cao (m):</label>
+            <input type="number" step="0.01" id="height" placeholder="Nhập chiều cao">
+
+            <button onclick="calculateBMI()">Kiểm tra chỉ số BMI</button>
+
+            <div class="error" id="error"></div>
+            <div class="result" id="result"></div>
+            <img id="bmiImage" src="" alt="">
+        </div>
+
+        <script>
+            function calculateBMI() {
+                const weight = parseFloat(document.getElementById("weight").value);
+                const height = parseFloat(document.getElementById("height").value);
+                const errorDiv = document.getElementById("error");
+                const resultDiv = document.getElementById("result");
+                const bmiImage = document.getElementById("bmiImage");
+
+
+                
+
+
+                if (isNaN(weight) || isNaN(height) || weight <= 0 || height <= 0) {
+                    errorDiv.textContent = "Nhập lại chỉ số";
+                    return;
+                }
+
+
+                const bmi = (weight / (height * height)).toFixed(2);
+                let message = "";
+                let imageSrc = "";
+
+
+                if (bmi < 18.5) {
+                    message = `Chỉ số BMI của bạn là ${bmi} → Gầy`;
+                    imageSrc = "../bài14/pic/thieucan.jpg";
+                } else if (bmi < 24.9) {
+                    message = `Chỉ số BMI của bạn là ${bmi} → Bình thường`;
+                    imageSrc = "../bài14/pic/bthg.jpg";
+                } else if (bmi < 29.9) {
+                    message = `Chỉ số BMI của bạn là ${bmi} → Thừa cân`;
+                    imageSrc = "../bai14/pic/thuacan.jpg";
+                } else if (bmi < 39.9) {
+                    message = `Chỉ số BMI của bạn là ${bmi} → Thừa cân`;
+                    imageSrc = "../bai14/pic/1-2.jpg";
+                }
+                else {
+                    message = `Chỉ số BMI của bạn là ${bmi} → Béo phì`;
+                    imageSrc = "../bai14/pic/beophi.jpg";
+                }
+
+
+                bmiImage.src = imageSrc;
+            }
+        </script>
+    </body>
+
+</html>

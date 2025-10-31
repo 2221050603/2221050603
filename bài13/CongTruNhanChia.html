@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h2>Tính </h2>
+
+    <div>
+        <label>số thứ 1:</label>
+        <input type="text" id="soThu1">
+    </div>
+    <div>
+        <label>số thứ 2:</label>
+        <input type="text" id="soThu2">
+    </div>
+    <div>
+        <label>số thứ 3:</label>
+        <input type="text" id="soThu3">
+    </div>
+
+    <button onclick="tinhDiem()">Tính Tổng</button>
+    <button onclick="tinhDiem()">Tính Hiệu</button>
+
+    <button onclick="tinhDiem()">Tính Tích</button>
+
+    <button onclick="tinhDiem()">Tính Thương</button>
+<script>
+        function tinhDiem() {
+            let a = parseFloat(document.getElementById("diemA").value);
+            let b = parseFloat(document.getElementById("diemB").value);
+            let c = parseFloat(document.getElementById("diemC").value);
+
+            // Kiểm tra dữ liệu hợp lệ
+           if (isNaN(a)) {
+                alert(" Vui lòng nhập điểm A!");
+                return;
+            }
+            if (isNaN(b)) {
+                alert(" Vui lòng nhập điểm B!");
+                return;
+            }
+            if (isNaN(c)) {
+                alert(" Vui lòng nhập điểm C!");
+                return;
+            }
+            if ((a < 0 || a > 10) || (b < 0 || b > 10) || (c < 0 || c > 10)) {
+                alert(" Điểm phải nằm trong khoảng 0–10!");
+                return;
+            }
+
+            // Tính điểm trung bình có trọng số
+            let tongDiem = a  + b + c ;
+            let hieuDiem = a - b - c;
+            let tichDiem = a * b * c;
+            let thuongDiem = a / b / c;
+            
+        }
+    </script>
+</body>
+
+</html>
