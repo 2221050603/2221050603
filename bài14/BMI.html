@@ -51,23 +51,24 @@
 
                 if (bmi < 18.5) {
                     message = `Chỉ số BMI của bạn là ${bmi} → Gầy`;
-                    imageSrc = "../bài14/pic/thieucan.jpg";
+                    imageSrc = "pic/thieucan.jpg";
                 } else if (bmi < 24.9) {
                     message = `Chỉ số BMI của bạn là ${bmi} → Bình thường`;
-                    imageSrc = "../bài14/pic/bthg.jpg";
+                    imageSrc = "pic/bthg.jpg";
                 } else if (bmi < 29.9) {
                     message = `Chỉ số BMI của bạn là ${bmi} → Thừa cân`;
-                    imageSrc = "../bai14/pic/thuacan.jpg";
+                    imageSrc = "pic/thuacan.jpg";
                 } else if (bmi < 39.9) {
                     message = `Chỉ số BMI của bạn là ${bmi} → Thừa cân`;
-                    imageSrc = "../bai14/pic/1-2.jpg";
+                    imageSrc = "pic/1-2.jpg";
                 }
                 else {
                     message = `Chỉ số BMI của bạn là ${bmi} → Béo phì`;
-                    imageSrc = "../bai14/pic/beophi.jpg";
+                    imageSrc = "pic/beophi.jpg";
                 }
 
 
+                resultDiv.textContent = message;
                 bmiImage.src = imageSrc;
             }
         </script>

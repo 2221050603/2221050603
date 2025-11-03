@@ -1,0 +1,19 @@
+<script>
+function hienThiChiTietPhim() {
+  const phim = JSON.parse(localStorage.getItem("phimDuocChon"));
+  if (!phim) {
+    document.body.innerHTML = "<h2>Không tìm thấy thông tin phim!</h2>";
+    return;
+  }
+
+  document.getElementById("tenPhim").innerText = phim.tenPhim;
+  document.getElementById("poster").src = phim.poster;
+  document.getElementById("namPhatHanh").innerText = phim.namPhatHanh;
+  document.getElementById("tuoi").innerText = phim.tuoi;
+  document.getElementById("thoiLuong").innerText = phim.thoiLuong;
+  document.getElementById("quocGia").innerText = phim.quocGia;
+  document.getElementById("theLoai").innerText = phim.theLoai;
+}
+
+window.onload = hienThiChiTietPhim;
+</script>
