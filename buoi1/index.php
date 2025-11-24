@@ -57,57 +57,82 @@
 // (nếu = 15 thì in ra tổng = 15)
 // (còn lại in ra lớn hơn 15)
 
-$tong = $soThuNhat + $soThuHai;
+// $tong = $soThuNhat + $soThuHai;
 
-echo "Số thứ nhất: $soThuNhat<br>";
-echo "Số thứ hai: $soThuHai<br>";
-echo "Tổng = $tong<br><br>";
+// echo "Số thứ nhất: $soThuNhat<br>";
+// echo "Số thứ hai: $soThuHai<br>";
+// echo "Tổng = $tong<br><br>";
 
-if ($tong < 15) {
-    echo "Tổng nhỏ hơn 15";
-} elseif ($tong == 15) {
-    echo "Tổng bằng 15";
-} else {
-    echo "Tổng lớn hơn 15" . "<br>";
-}
+// if ($tong < 15) {
+//     echo "Tổng nhỏ hơn 15";
+// } elseif ($tong == 15) {
+//     echo "Tổng bằng 15";
+// } else {
+//     echo "Tổng lớn hơn 15" . "<br>";
+// }
 
-//8. switch case
-$color = "red"; // Thử thay thành "red", "blue", "green" hoặc bất kỳ giá trị nào khác
+// //8. switch case
+// $color = "red"; // Thử thay thành "red", "blue", "green" hoặc bất kỳ giá trị nào khác
 
-    switch ($color) {
-        case "red":
-            echo "is red";
-            break;
-        case "blue":
-            echo "is blue";
-            break;
-        case "green":
-            echo "is green";
-            break;
-        default:
-            echo "no color";
-            break;
-    }
+//     switch ($color) {
+//         case "red":
+//             echo "is red";
+//             break;
+//         case "blue":
+//             echo "is blue";
+//             break;
+//         case "green":
+//             echo "is green";
+//             break;
+//         default:
+//             echo "no color";
+//             break;
+//     }
 
-//9. vòng lặp for
-for ($i=0; $i < 6; $i++){
-    echo $i . "<br>";
-}
+// //9. vòng lặp for
+// for ($i=0; $i < 6; $i++){
+//     echo $i . "<br>";
+// }
 
-//10.mảng
- $mang = ["An", "Nhat Anh", "Vu Anh"];
+// //10.mảng
+//  $mang = ["An", "Nhat Anh", "Vu Anh"];
  
- //đếm phần tử
- echo count($mang) . "<br>";
- echo $mang[1] . ">br>";
- print_r($mang) ;
- $mang[0] = "Hai Anh";
+//  //đếm phần tử
+//  echo count($mang) . "<br>";
+//  echo $mang[1] . ">br>";
+//  print_r($mang) ;
+//  $mang[0] = "Hai Anh";
+//  print_r($mang);
+//  $mang[] = "Tam";
+//  print_r($mang);
+//  #xóa
+//  unset($mang[3]);
+//  print_r($mang);
+ 
+ #sắp xếp mảng
+ $mang = ["C" , "B" , "D" , "A"];
  print_r($mang);
- $mang[] = "Tam";
- print_r($mang);
- #xóa
- unset($mang[3]);
- print_r($mang);
-    ?>
+echo "<br>";
+#sx tăng
+sort($mang);
+print_r($mang);
+#sx giảm
+echo"<br>";
+rsort($mang);
+print_r($mang);
+
+//11. kiểm tr xem biến có tồn tại hay ko
+// $bienA = "hello";
+// isset($bienA);  //true
+// isset($bienB);  //false
+
+// if()
+
+//check empty
+$check = "a";
+if(empty($check)){
+    if(empty)
+}
+?>
 </body>
 </html>
