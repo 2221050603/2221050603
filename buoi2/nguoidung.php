@@ -1,13 +1,12 @@
 <?php
 include("connect.php");
 
-// Sửa lại tên cột cho đúng thực tế 99% sinh viên dùng
 $sql = "SELECT 
             nd.id,
             nd.ten_dang_nhap, 
             nd.ho_ten, 
             nd.email, 
-            nd.sdt,                 -- sửa từ so_dt thành sdt (rất hay gặp)
+            nd.sdt,                 
             nd.ngay_sinh,
             vt.ten_vai_tro 
         FROM nguoi_dung nd 
@@ -37,10 +36,11 @@ while($row = mysqli_fetch_array($result)){
         <td><?php echo $row["ten_dang_nhap"]; ?></td>
         <td><?php echo $row["ho_ten"]; ?></td>
         <td><?php echo $row["email"]; ?></td>
-        <td><?php echo $row["sdt"]; ?></td>               <!-- sửa ở đây luôn -->
+        <td><?php echo $row["sdt"]; ?></td>               
         <td><?php echo $row["ten_vai_tro"]; ?></td>
         <td><?php echo $row["ngay_sinh"]; ?></td>
         <td>
+            <button>thêm</button>
             <button>Sửa</button>
             <button>Xóa</button>
         </td>

@@ -9,14 +9,13 @@
     <h1>Trang chủ</h1>
 <?php
     session_start();
-    // Nếu chưa đăng nhập thì đá về login (sửa lại logic cho đúng)
     if (!isset($_SESSION['username'])) {
-        header("Location: login.php");
+        header("Location: index.php");
         exit();
     }
 ?>
     <h3>Chào mừng, <?= $_SESSION['username']; ?> (DuyTien)</h3>
-    <p>Chào xin chào ... đây là trang chủ nè!</p>
-    <a href="login.php">Đăng xuất (về trang đăng nhập)</a>
+    <p>Xin chào ... đây là trang chủ!</p>
+    <a href="index.php">về trang chủ</a>
 </body>
 </html>

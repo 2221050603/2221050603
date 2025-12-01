@@ -42,7 +42,7 @@ a {
         </ul>
         <ul class="">
             <li class=""><php echo "xin chào " . $_SESSION["username"]; ?></li>
-            <li class=""><a class="" href="index.php?page_layout=dangxuat">Đăng xuất</a></li>
+            <li class=""><a class="" href="index.php?page_layout=login">Đăng nhập</a></li>
         </ul>
     </nav>
 </header>
@@ -65,9 +65,14 @@ if(isset($_GET['page_layout'])){
         case 'nguoidung':
             include "nguoidung.php";
             break;
-        case 'dangxuat':
-            include "dangxuat.php";
+        case 'dangnhap':
+            include "login.php";
             break;
+    }
+     
+    if (!isset($_SESSION['username'])) {
+        header("Location: login.php");
+        exit();
     }
 }
 ?>

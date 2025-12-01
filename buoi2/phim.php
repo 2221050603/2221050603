@@ -6,6 +6,11 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>phim</h1>
+    <h1>quản lí thông tin phim</h1>
+    <table>
+        <tr>
+            
+        </tr>
+    </table>
 </body>
 </html>
